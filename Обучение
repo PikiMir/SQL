@@ -1,0 +1,13 @@
+create table ordering
+select author , title , 
+(
+
+ SELECT ROUND(AVG(amount)) 
+ FROM book
+) as amount
+from book
+
+WHERE amount<(SELECT ROUND(AVG(amount)) 
+FROM book);
+
+select * from ordering;
