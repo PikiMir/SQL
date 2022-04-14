@@ -1,1 +1,1 @@
-# SQL
+# SQL обучение в Stepik
